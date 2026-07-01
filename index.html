@@ -1,24 +1,31 @@
 <div class="player">
-   <img src="images/cover.jpg" class="cover">
-   <h2>Now Playing</h2>
-   <h3 id="title">Song Title</h3> <p id="artist">Artist Name</p>
-   <p id="artist">Artist Name</p>
-  
-   <audio id="audio"></audio>
-  
-   <div class="controls">
-      <button id="prev"> </button>
-      <button id="play"> </button>
-      <button id="next"> </button>
-  </div>
+    <img src="images/cover.jpg" class="cover" alt="Album Cover">
 
-  <div class="progress">
-     <input type="range" id="progress" value="0">
-  </div>
+    <h2>Now Playing</h2>
+    <h3 id="title">Song Title</h3>
+    <p id="artist">Artist Name</p>
 
-  <div class="volume">
-     <i class="vol-icon"></i>
-    <input type ="range" id="volume"
-              mins "0" step"0.01" value="1">
-  </div>
+    <audio id="audio"></audio>
+
+    <div class="controls">
+        <button id="prev">⏮</button>
+        <button id="play">▶</button>
+        <button id="next">⏭</button>
+    </div>
+
+    <div class="progress">
+        <input type="range" id="progress" min="0" max="100" value="0">
+    </div>
+
+    <div class="volume">
+        <i class="vol-icon">🔊</i>
+        <input
+            type="range"
+            id="volume"
+            min="0"
+            max="1"
+            step="0.01"
+            value="1"
+        >
+    </div>
 </div>
